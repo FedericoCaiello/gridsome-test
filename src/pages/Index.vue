@@ -8,9 +8,13 @@
       <img class="col-8 absolute top-0 right-0 bottom-0 h-full object-cover" src="" />
     </div> -->
 
-<template>
+<template class="py-56 relative">
+  <navbar />
+  <div class="w-6/12"></div>
   <div>
-    <navbar />
+  <div class="w-8/12">
+    <g-image src="~/assets/img-background.png" width="" />
+  </div>
   </div>
 </template>
 
@@ -19,8 +23,8 @@ import navbar from "~/components/navbar.vue";
 
 export default {
   components: {
-    navbar
-  }
+    navbar,
+  },
 };
 </script>
 
