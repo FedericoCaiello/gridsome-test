@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-blue-700 px-8 inline">
+  <div class="bg-blue-700 px-8 inline py-1">
       <slot />
   </div>
 </template>

@@ -9,10 +9,10 @@
         </ul>
       </div>
       <div class="lg:w-4/12">
-        <g-image src="~/assets/Landie.png" class="mx-auto"/>
+        <g-image src="~/assets/Landie.png" class="lg:mx-auto"/>
       </div>
-      <div class="lg:w-4/12 text-right">
-          <base-button class="text-white py-1">Buy Now</base-button>
+      <div class="lg:w-4/12 lg:text-right">
+          <base-button class="text-white">Buy Now</base-button>
       </div>
     </div>
   </div>
