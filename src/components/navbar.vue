@@ -12,7 +12,7 @@
         <g-image src="~/assets/Landie.png" class="lg:mx-auto"/>
       </div>
       <div class="lg:w-4/12 lg:text-right">
-          <base-button class="text-white">Buy Now</base-button>
+          <base-button>Buy Now</base-button>
       </div>
     </div>
   </div>
