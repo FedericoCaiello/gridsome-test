@@ -182,6 +182,18 @@
         </div>
       </div>
     </app-container>
+    <app-container class="mt-24">
+      <g-image class="relative z-0" src="~/assets/Rectangle.png"/>
+        <div>
+          <h2>
+            A Price To Suite Everyone
+          </h2>
+
+      </div>
+      
+
+    </app-container>
+
   </div>
 </template>
 
@@ -202,6 +214,7 @@ export default {
 };
 </script>
 
+    AppContainer
 
 
 
