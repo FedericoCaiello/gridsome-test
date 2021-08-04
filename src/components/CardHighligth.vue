@@ -6,7 +6,7 @@
     </div>
     <div class="lg:w-6/12">
       <div>
-        <h2 class="text-blue-900 text-4xl font-medium">
+        <h2 class="text-blue-900 text-4xl font-medium mb-4">
           <slot name="title" />
         </h2>
       </div>

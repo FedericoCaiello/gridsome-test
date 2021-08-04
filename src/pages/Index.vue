@@ -49,10 +49,10 @@
       <app-container class="lg:flex my-24 lg:my-36 lg:space-x-4">
         <div class="lg:w-6/12">
           <div class="text-blue-900 text-4xl font-medium">
-            <h2>Light, Fast & Powerful</h2>
+            <h2 class="mb-4">Light, Fast & Powerful</h2>
           </div>
-          <div class="text-blue-600 space-y-6">
-            <p>
+          <div class="text-blue-600">
+            <p class="mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               assumenda veritatis fuga, illo a blanditiis quod sunt! Animi
               numquam, adipisci quasi obcaecati impedit, dolorem vitae amet non,
@@ -93,77 +93,92 @@
         <template v-slot:image>
           <g-image src="~/assets/main_img1.png" />
         </template>
-        <template v-slot:title>
-          Light, Fast & Powerful
-        </template>
+        <template v-slot:title> Light, Fast & Powerful </template>
         <template v-slot:text>
-          <p class="mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            assumenda veritatis fuga, illo a blanditiis quod sunt! Animi
-            numquam, adipisci quasi obcaecati impedit, dolorem vitae amet non,
-            tempore libero voluptatibus!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Necessitatibus rem rerum perspiciatis accusantium corrupti optio
-            minima asperiores
-          </p>
+          <div class="text-blue-600">
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              assumenda veritatis fuga, illo a blanditiis quod sunt! Animi
+              numquam, adipisci quasi obcaecati impedit, dolorem vitae amet non,
+              tempore libero voluptatibus!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Necessitatibus rem rerum perspiciatis accusantium corrupti optio
+              minima asperiores
+            </p>
+          </div>
         </template>
       </card-highligth>
       <card-highligth>
         <template v-slot:image>
           <g-image src="~/assets/main_img2.png" />
         </template>
-        <template v-slot:title>
-          <h2>Light, Fast & Powerful</h2>
-        </template>
+        <template v-slot:title> Light, Fast & Powerful </template>
         <template v-slot:text>
-          <p class="mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            assumenda veritatis fuga, illo a blanditiis quod sunt! Animi
-            numquam, adipisci quasi obcaecati impedit, dolorem vitae amet non,
-            tempore libero voluptatibus!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Necessitatibus rem rerum perspiciatis accusantium corrupti optio
-            minima asperiores
-          </p>
+          <div class="text-blue-600">
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              assumenda veritatis fuga, illo a blanditiis quod sunt! Animi
+              numquam, adipisci quasi obcaecati impedit, dolorem vitae amet non,
+              tempore libero voluptatibus!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Necessitatibus rem rerum perspiciatis accusantium corrupti optio
+              minima asperiores
+            </p>
+          </div>
         </template>
       </card-highligth>
       <card-highligth>
         <template v-slot:image>
           <g-image src="~/assets/main_img3.png" />
         </template>
-        <template v-slot:title>
-          <h2>Light, Fast & Powerful</h2>
-        </template>
+        <template v-slot:title> Light, Fast & Powerful </template>
         <template v-slot:text>
-          <p class="mb-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            assumenda veritatis fuga, illo a blanditiis quod sunt! Animi
-            numquam, adipisci quasi obcaecati impedit, dolorem vitae amet non,
-            tempore libero voluptatibus!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Necessitatibus rem rerum perspiciatis accusantium corrupti optio
-            minima asperiores
-          </p>
+          <div class="text-blue-600">
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              assumenda veritatis fuga, illo a blanditiis quod sunt! Animi
+              numquam, adipisci quasi obcaecati impedit, dolorem vitae amet non,
+              tempore libero voluptatibus!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Necessitatibus rem rerum perspiciatis accusantium corrupti optio
+              minima asperiores
+            </p>
+          </div>
+          <base-button class="mt-4">Purchase Now</base-button>
         </template>
       </card-highligth>
     </app-container>
-    <app-container class="mt-24 relative">
-      <g-image src="~/assets/Rectangle.png" />
-      <div class="absolute top-1/4 left-1/3 text-center">
-        <h2>A Price To Suite Everyone</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
-          quia temporibus nesciunt, quos, ipsum eum eius, nulla voluptate
-          corporis aspernatur iusto unde fugit laborum mollitia ipsa veniam
-          inventore rerum qui.
+    <app-container class="mt-24 flex justify-center relative w-full"> <!-- lo sfondo deve coprire tutto la base -->
+      <g-image
+        class="absolute top-0 bottom-0 right-0 object-cover h-full"
+        src="~/assets/Rectangle.png"
+      />
+      <!-- object-cover h-full -->
+      <div class="w-7/12 text-center z-10 my-64">
+        <h2 class="text-4xl font-medium">A Price To Suite Everyone</h2>
+        <p class="text-blue-600 my-4">
+          Corrupti quia temporibus nesciunt, quos, ipsum eum eius, nulla
+          voluptate corporis aspernatur iusto unde fugit laborum mollitia ipsa
+          veniam inventore rerum qui.
         </p>
+        <div>
+          <p class="font-medium text-5xl text-blue-700">$ 40</p>
+          <p class="text-blue-600 mt-4">UI Design Kit</p>
+        </div>
+        <div class="my-12">
+          <p class="text-grey-600 text-sm">See, One time. Simple.</p>
+          <base-button class="mt-2">Purchase Now</base-button>
+        </div>
       </div>
+    </app-container>
+    <app-container>
+      <footer-page />
     </app-container>
   </div>
 </template>
@@ -174,6 +189,9 @@ import navbar from "~/components/navbar.vue";
 import AppContainer from "~/components/AppContainer.vue";
 import BaseButton from "~/components/BaseButton.vue";
 import CardHighligth from "~/components/CardHighligth.vue";
+import FooterPage from "~/components/FooterPage.vue";
+
+
 
 export default {
   components: {
@@ -181,9 +199,11 @@ export default {
     AppContainer,
     BaseButton,
     CardHighligth,
-  },
+    FooterPage
+  }
 };
 </script>
+
 
 
 
