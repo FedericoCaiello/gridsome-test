@@ -154,32 +154,33 @@
         </template>
       </card-highligth>
     </app-container>
-    <app-container class="mt-24 flex justify-center relative w-full"> <!-- lo sfondo deve coprire tutto la base -->
-      <g-image
-        class="absolute top-0 bottom-0 right-0 object-cover h-full"
-        src="~/assets/Rectangle.png"
-      />
-      <!-- object-cover h-full -->
-      <div class="w-7/12 text-center z-10 my-64">
-        <h2 class="text-4xl font-medium">A Price To Suite Everyone</h2>
-        <p class="text-blue-600 my-4">
-          Corrupti quia temporibus nesciunt, quos, ipsum eum eius, nulla
-          voluptate corporis aspernatur iusto unde fugit laborum mollitia ipsa
-          veniam inventore rerum qui.
-        </p>
-        <div>
-          <p class="font-medium text-5xl text-blue-700">$ 40</p>
-          <p class="text-blue-600 mt-4">UI Design Kit</p>
+    <div class="bg-blue">
+      <app-container class="flex justify-center">
+        <!-- lo sfondo deve coprire tutto la base -->
+        <div class="w-7/12 text-center py-64">
+          <h2 class="text-4xl font-medium">A Price To Suite Everyone</h2>
+          <p class="text-blue-600 my-4">
+            Corrupti quia temporibus nesciunt, quos, ipsum eum eius, nulla
+            voluptate corporis aspernatur iusto unde fugit laborum mollitia ipsa
+            veniam inventore rerum qui.
+          </p>
+          <div>
+            <p class="font-medium text-5xl text-blue-700">$ 40</p>
+            <p class="text-blue-600 mt-4">UI Design Kit</p>
+          </div>
+          <div class="my-12">
+            <p class="text-grey-600 text-sm">See, One time. Simple.</p>
+            <base-button class="mt-2">Purchase Now</base-button>
+          </div>
         </div>
-        <div class="my-12">
-          <p class="text-grey-600 text-sm">See, One time. Simple.</p>
-          <base-button class="mt-2">Purchase Now</base-button>
-        </div>
-      </div>
-    </app-container>
-    <app-container>
-      <footer-page />
-    </app-container>
+      </app-container>
+    </div>
+    <div class="bg-blue-500 py-8">
+      <app-container>
+        <footer-page />
+      </app-container>
+    </div>
+    
   </div>
 </template>
 
@@ -191,18 +192,23 @@ import BaseButton from "~/components/BaseButton.vue";
 import CardHighligth from "~/components/CardHighligth.vue";
 import FooterPage from "~/components/FooterPage.vue";
 
-
-
 export default {
   components: {
     navbar,
     AppContainer,
     BaseButton,
     CardHighligth,
-    FooterPage
-  }
+    FooterPage,
+  },
 };
 </script>
+<style>
+.bg-blue {
+  width: 100%;
+  background-image: url("../assets/Rectangle.png");
+  background-size: cover;
+}
+</style>
 
 
 
