@@ -177,7 +177,7 @@
     </div>
     <div class="bg-blue-500 py-8">
       <app-container>
-        <footer-page />
+        <app-footer />
       </app-container>
     </div>
     
@@ -190,7 +190,7 @@ import navbar from "~/components/navbar.vue";
 import AppContainer from "~/components/AppContainer.vue";
 import BaseButton from "~/components/BaseButton.vue";
 import CardHighligth from "~/components/CardHighligth.vue";
-import FooterPage from "~/components/FooterPage.vue";
+import AppFooter from "~/components/AppFooter.vue";
 
 export default {
   components: {
@@ -198,7 +198,7 @@ export default {
     AppContainer,
     BaseButton,
     CardHighligth,
-    FooterPage,
+    AppFooter,
   },
 };
 </script>
