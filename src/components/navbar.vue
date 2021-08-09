@@ -38,17 +38,21 @@
       </div>
     </div>
     <div class="lg:hidden px-5 text-right">
-      <button @click="ToggleMenu" class="text-white mt-4 w-12 relative z-20">
+      <button @click="ToggleMenu" class="mt-4 w-12 relative z-20">
         <svg
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
           data-icon="bars"
-          class="svg-inline--fa fa-bars fa-w-14 text-black"
+          class="svg-inline--fa fa-bars fa-w-14"
+          :class="{
+          'text-blue-300': MenuActive === false,
+          'text-grey-300': MenuActive === true,
+        }"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512"
-        >
+        ><!--:class qui invece per gestire al click il colore dell'hamburger -->
           {{ MenuActive }}
           <path
             fill="currentColor"
@@ -72,7 +76,7 @@
           '-translate-x-full': MenuActive === false,
           'translate-x-0': MenuActive === true,
         }"
-      >
+      ><!-- :class inserito qui per creare l'effetto transazione per l'hamburger -->
         <div class="lg:w-4/12">
           <g-image src="~/assets/Landie.png" class="lg:mx-auto" />
         </div>
