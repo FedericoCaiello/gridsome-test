@@ -47,7 +47,7 @@
           class="svg-inline--fa fa-bars fa-w-14"
           :class="{
           'text-blue-300': MenuActive === false,
-          'text-grey-300': MenuActive === true,
+          'text-blue-900': MenuActive === true,
         }"
           role="img"
           xmlns="http://www.w3.org/2000/svg"
